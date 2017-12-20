@@ -9,8 +9,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 const Application = () => (
   <BrowserRouter>
     <Switch>
-    <Route exact path='/' component={App} /> 
-    <Route exact path='/faq' component={Faq} />
+    <Route exact path={process.env.PUBLIC_URL + '/'} component={App} /> 
+    <Route exact path={process.env.PUBLIC_URL + '/faq'} component={Faq} />
     </Switch>
   </BrowserRouter>
 )
