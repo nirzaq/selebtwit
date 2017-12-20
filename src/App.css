@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+  margin: 1rem;
+  font-family: "Passion One", sans-serif;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.box {
+  border-radius: 0;
+  padding: 1rem;
+}
+
+.leaderboard {
+  margin-top: 1rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.rank {
+  position: absolute;
+}
+
+.navbar-logo {
+  font-family: "Passion One", sans-serif;
+  font-size: 1.5em;
+}
+
+.App-title-logo {
+  margin-right: 1rem;
+  margin-top: 25px;
+}
+
+body {
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+.media-left {
+  margin-left: 3rem;
+}
