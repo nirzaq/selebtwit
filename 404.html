@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+  
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="%PUBLIC_URL%/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="%PUBLIC_URL%/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="%PUBLIC_URL%/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="%PUBLIC_URL%/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="%PUBLIC_URL%/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="%PUBLIC_URL%/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="%PUBLIC_URL%/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="%PUBLIC_URL%/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="SSA"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="%PUBLIC_URL%/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="%PUBLIC_URL%/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="%PUBLIC_URL%/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="%PUBLIC_URL%/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="%PUBLIC_URL%/mstile-310x310.png" />
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@nirzaq">
+    <meta name="twitter:title" content="Selebtwit Statistics Analysis">
+    <meta name="twitter:description" content="SSA - Yuk cari tahu peringkat selebtwit favorit kamu disini!">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/nirzaq/selebtwit/master/public/SSA.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111460262-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+  
+      gtag('config', 'UA-111460262-1');
+    </script>
+
+    <title>Selebtwit Statistics Analysis</title>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafrex/spa-github-pages
+      // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+      // ----------------------------------------------------------------------
+      // This script takes the current url and converts the path and query
+      // string into just a query string, and then redirects the browser
+      // to the new url with only a query string and hash fragment,
+      // e.g. http://www.foo.tld/one/two?a=b&c=d#qwe, becomes
+      // http://www.foo.tld/?p=/one/two&q=a=b~and~c=d#qwe
+      // Note: this 404.html file must be at least 512 bytes for it to work
+      // with Internet Explorer (it is currently > 512 bytes)
+      // If you're creating a Project Pages site and NOT using a custom domain,
+      // then set segmentCount to 1 (enterprise users may need to set it to > 1).
+      // This way the code will only replace the route part of the path, and not
+      // the real directory in which the app resides, for example:
+      // https://username.github.io/repo-name/one/two?a=b&c=d#qwe becomes
+      // https://username.github.io/repo-name/?p=/one/two&q=a=b~and~c=d#qwe
+      // Otherwise, leave segmentCount as 0.
+      var segmentCount = 1;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
+        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
