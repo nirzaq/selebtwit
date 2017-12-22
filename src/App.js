@@ -1,12 +1,18 @@
 import React, { Component } from "react";
 import "./App.css";
 import LeaderboardItem from "./LeaderboardItem";
-import leaderboard from "./leaderboard.json";
+import indonesia from "./indonesia.json";
+import world from "./world.json";
 import { compareValues } from "./Util";
 class App extends Component {
   render() {
-    const data = leaderboard.sort(compareValues("score", "desc"));
-
+    let data = []
+    const region = this.props.region
+    if (region === "Indonesia") {
+    data = indonesia.sort(compareValues("score", "desc"));
+    } else {
+    data = world.sort(compareValues("score", "desc"));
+    }
     return (
         <div className="container">
           <h1 className="App-title is-size-2 has-text-black has-text-centered">
@@ -18,7 +24,7 @@ class App extends Component {
             </span>{" "}
             Selebtwit
           </h1>
-        {/* </div> */}
+          <h2 className="is-size-3 has-text-black has-text-centered">{this.props.leaderboardTitle}</h2>
         <ul className="leaderboard">
           {data.map((selebtwit, index) => {
             return <LeaderboardItem rank={index + 1} {...selebtwit} />;
